@@ -19,7 +19,7 @@
 	     	<div class="span12">
 	     		<div class="innerSpan12">
 	     			<div class="afficheConcert center">
-	     				<img id="afficheConcert" src="" alt="afficheCOncert"/>
+	     				<img id="afficheConcert" src="" alt="afficheConcert"/>
 	     			</div>
 			     	<table class="table center table-hover">
 			     		<tr>
@@ -83,15 +83,16 @@
 					var toDisplay = j +" jours "+ h +" heurs "+ mn +" minutes "+ sec + " secondes ";
 					$("#compteur").html(toDisplay);
 					$("#prochainConcert").html("Prochain concert dans : ");
-
+					tRebour=setTimeout ("rebour();", 1000);
 				}
 
-				tRebour=setTimeout ("rebour();", 1000);
+				//tRebour=setTimeout ("rebour();", 1000);
 
 			}
 
 
     	$(document).ready(function(){
+    		$("#prochainConcert").html("Pas de concert prévu pour l'instant");
     		$(".afficheConcert").hide();
     		$("tr").click(function(){
     			$("#afficheConcert").attr("src","affiches/"+$(this).attr("data-afficheconcert"));    			

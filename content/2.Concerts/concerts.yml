@@ -8,28 +8,25 @@
   minutes: 30
   seconds: 0
 :concerts:
-  -
-    description: Concert de la Saint-Patrick
-    affiche: affiche2.jpg
-    date: 16/03/13
-    horaire: 20h30
-    lieu: Micro Braserie La Fabrique
-    ville: Amancy
-  -
-    description: Concert de la Saint-Patrick
-    date: 17/03/13
-    affiche: affiche1.jpg
-    horaire: 20h30
-    lieu: Le bar
-    ville: Trou perdu
-  -
-    description: wouaf
-    date: 21/12/13
-    affiche: 
-    horaire: 20h30
-    lieu: bar
-    ville: Anne masse
+ # -
+  #  description: Concert de la Saint-Patrick
+   # affiche: affiche2.jpg
+   # date: 16/03/13
+    #horaire: 20h30
+    #lieu: Micro Braserie La Fabrique
+    #ville: Amancy
+ # -
+  #  description: Concert de la Saint-Patrick
+   # date: 17/03/13
+    #affiche: affiche1.jpg
+    #horaire: 20h30
+    #lieu: Le bar
+    #ville: Trou perdu
+  #-
+  #  description: wouaf
+  #  date: 21/12/13
+   # affiche: 
+   # horaire: 20h30
+    #lieu: bar
+    #ville: Anne masse
 
-:hello: 
-  world: hello world
-  monde : salut tout le monde
