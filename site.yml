@@ -1,0 +1,8 @@
+# The key value pairs found below are available within the templates.
+# {{site_name}}, {{url}}, {{copyright}} and {{analytics_code}}
+
+:site_name: passmoilecelte.fr
+:url: http://passmoilecelte.dev
+:copyright: 2013
+:analytics_code: 
+:yoanURL: http://yoan.ro/ullard

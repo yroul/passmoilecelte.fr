@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "shared/head" %}
+  <link rel="stylesheet" href="/css/photos.css" type="text/css">
+  <body id="body">
+    <section id="wrapper">
+      {% include "shared/header" %}	
+	  
+	     <div class="row-fluid">
+	     	<div class="span12">
+	     		<div class="innerSpan12">
+	     			<div class="mainContent">
+	     				<ul class="polaroids">
+	     					{% for image in images %}
+	     						<li>
+	     							<a href="#" title="{{image.name}}">
+	     								<img src="{{image.path}}" alt="{{image.name}}" />
+	     							</a>
+	     						</li>
+	     					{% endfor %}
+	     					
+	     				</ul>
+	     				
+	     			</div><!-- mainContent -->
+	     		</div><!-- innerspan-->
+	     	</div>
+	     </div>
+	    
+	
+      {% include "shared/footer" %}
+    </section>
+    {% include "shared/analytics" %}
+  </body>
+</html>

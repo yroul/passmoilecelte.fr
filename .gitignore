@@ -1,0 +1,6 @@
+.DS_Store
+output/*
+.sass-cache
+pmlc.sublime-project
+pmlc.sublime-workspace
+content/4.Photos/images/*

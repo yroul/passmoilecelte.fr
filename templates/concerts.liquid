@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "shared/head" %}
+  <body id="body">
+    <section id="wrapper">
+      {% include "shared/header" %}	
+	  
+	    
+	    <section role="main">
+	     <div class="row-fluid"><!-- compte à rebours -->
+	     	<div class="span12">
+	     		<div class="innerSpan12">
+		     		<h3 class="center celticFont" id="prochainConcert"></h3>
+		     		<h2 id="compteur" class="counter center celticFont"></h2>
+	     		</div>
+	     	</div>
+	     </div>
+	     <div class="row-fluid"><!-- tableau des dates -->
+	     	<div class="span12">
+	     		<div class="innerSpan12">
+	     			<div class="afficheConcert center">
+	     				<img id="afficheConcert" src="" alt="afficheCOncert"/>
+	     			</div>
+			     	<table class="table center table-hover">
+			     		<tr>
+			     			<th>
+			     				Date
+			     			</th>
+			     			<th>
+			     				Horaire
+			     			</th>
+			     			<th>
+			     				Description
+			     			</th>
+			     			<th>
+			     				Lieu
+			     			</th>
+			     			<th>
+			     				Ville
+			     			</th>
+
+			     		</tr>
+			     		{% for concert in concerts %}			     		
+			     		<tr data-afficheconcert="{{concert.affiche}}">
+			     			<td>{{concert.date}}
+			     			</td>
+			     			<td>{{concert.horaire}}
+			     			</td>
+			     			<td>{{concert.description}}
+			     			</td>
+			     			<td>{{concert.lieu}}
+			     			</td>
+			     			<td>{{concert.ville}}
+			     			</td>
+			     		</tr>
+		  			{% endfor %}
+					</table>
+				</div>
+			</div>
+	     	
+	     </div>
+	    </section>
+	
+      {% include "shared/footer" %}
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    	var rebour = function(){
+    			var curDate = new Date();
+    			var target = new Date({{nextConcert.year}},{{nextConcert.month}},{{nextConcert.day}},{{nextConcert.hours}},{{nextConcert.minutes}},{{nextConcert.seconds}});
+    			var sec = (target - curDate) / 1000;
+    			var n = 24 * 3600;
+    			if (sec > 0) {
+
+					j = Math.floor (sec / n);
+
+					h = Math.floor ((sec - (j * n)) / 3600);
+
+					mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
+
+					sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
+
+					var toDisplay = j +" jours "+ h +" heurs "+ mn +" minutes "+ sec + " secondes ";
+					$("#compteur").html(toDisplay);
+					$("#prochainConcert").html("Prochain concert dans : ");
+
+				}
+
+				tRebour=setTimeout ("rebour();", 1000);
+
+			}
+
+
+    	$(document).ready(function(){
+    		$(".afficheConcert").hide();
+    		$("tr").click(function(){
+    			$("#afficheConcert").attr("src","affiches/"+$(this).attr("data-afficheconcert"));    			
+    			$(".afficheConcert").show();
+
+    		});
+    		$("img").error(function () {
+ 				 
+    		$(".afficheConcert").hide();		
+ 			});
+    		
+			rebour();
+    	});
+    	
+    </script>
+    {% include "shared/analytics" %}
+  </body>
+</html>

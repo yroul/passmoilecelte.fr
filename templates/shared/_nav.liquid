@@ -1,0 +1,8 @@
+<nav id="navigation">
+	<ul>
+		
+			{% for item in navigation %}
+				<li><a href="{{item.permalink}}">{{item.name}}</a></li>
+			{% endfor %}
+	</ul>
+</nav>
