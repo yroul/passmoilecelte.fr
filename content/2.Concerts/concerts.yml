@@ -2,19 +2,19 @@
 #month range (0-11)
 :nextConcert:
   year: 2013
-  month: 2
-  day: 16
+  month: 5
+  day: 2
   hours: 20
   minutes: 30
   seconds: 0
 :concerts:
- # -
-  #  description: Concert de la Saint-Patrick
-   # affiche: affiche2.jpg
-   # date: 16/03/13
-    #horaire: 20h30
-    #lieu: Micro Braserie La Fabrique
-    #ville: Amancy
+  -
+    description: Fête de la musique
+    #affiche: affiche2.jpg
+    date: 22/06/13
+    horaire: 20h30
+    lieu: Place de la Mairie
+    ville: Douvaine
  # -
   #  description: Concert de la Saint-Patrick
    # date: 17/03/13
