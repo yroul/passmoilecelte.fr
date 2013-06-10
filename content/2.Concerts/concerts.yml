@@ -3,16 +3,16 @@
 :nextConcert:
   year: 2013
   month: 5
-  day: 2
-  hours: 20
-  minutes: 30
+  day: 22
+  hours: 18
+  minutes: 0
   seconds: 0
 :concerts:
   -
     description: Fête de la musique
     #affiche: affiche2.jpg
     date: 22/06/13
-    horaire: 20h30
+    horaire: 18h00
     lieu: Place de la Mairie
     ville: Douvaine
  # -
