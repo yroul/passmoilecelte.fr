@@ -36,6 +36,13 @@ img {
 	margin: auto;
 	max-width: 100%;
 	height: auto;
+
+
+}
+#band{
+	-moz-box-shadow:    3px 3px 4px 2px #000000;
+  -webkit-box-shadow: 3px 3px 4px 2px #000000;
+  box-shadow:         3px 3px 4px 2px #000000;
 }
 nav{
 	font-family: celtic,Arial;
