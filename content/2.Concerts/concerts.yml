@@ -8,13 +8,13 @@
   minutes: 45
   seconds: 0
 :concerts:
-  -
-    description: Fête de la musique
+ # -
+   # description: Fête de la musique
     #affiche: affiche2.jpg
-    date: 22/06/13
-    horaire: 19h45
-    lieu: Place de la Mairie
-    ville: Douvaine
+    #date: 22/06/13
+    #horaire: 19h45
+    #lieu: Place de la Mairie
+    #ville: Douvaine
  # -
   #  description: Concert de la Saint-Patrick
    # date: 17/03/13
