@@ -2,19 +2,20 @@
 #month range (0-11)
 :nextConcert:
   year: 2013
-  month: 5
-  day: 22
-  hours: 19
-  minutes: 45
+  month: 7
+  day: 24
+  hours: 21
+  minutes: 0
   seconds: 0
 :concerts:
- # -
-   # description: Fête de la musique
+
+  -
+    description: Regate des vieux bateaux
     #affiche: affiche2.jpg
-    #date: 22/06/13
-    #horaire: 19h45
-    #lieu: Place de la Mairie
-    #ville: Douvaine
+    date: 24/08/13
+    horaire: 21h00
+    lieu: Port
+    ville: Nernier
  # -
   #  description: Concert de la Saint-Patrick
    # date: 17/03/13
