@@ -2,20 +2,28 @@
 #month range (0-11)
 :nextConcert:
   year: 2013
-  month: 7
-  day: 24
+  month: 8
+  day: 06
   hours: 21
   minutes: 0
   seconds: 0
 :concerts:
 
   -
-    description: Regate des vieux bateaux
+    description: Soirée celtique
     #affiche: affiche2.jpg
-    date: 24/08/13
+    date: 06/09/13
     horaire: 21h00
-    lieu: Port
-    ville: Nernier
+    lieu: 
+    ville: Villaz
+  -
+    #description: Regate des vieux bateaux
+    #affiche: affiche2.jpg
+    #date: 24/08/13
+    #horaire: 21h00
+    #lieu: Port
+    #ville: Nernier
+
  # -
   #  description: Concert de la Saint-Patrick
    # date: 17/03/13
